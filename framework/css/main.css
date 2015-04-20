@@ -15,6 +15,15 @@ html {
     outline: 1px dotted red !important;
 }
 
+body {
+    font-size: 16px;
+
+}
+
+p {
+    font-family: helvetica, arial, sans-serif;
+    line-height: 1.5em;
+}
 
 .col-4 > p {
     padding: 10px;
