@@ -12,10 +12,10 @@ html {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
-    outline: 1px dotted red !important;
+    /*outline: 1px dotted red !important;*/
 }
-
 /* cssreset.com */
+
 * {
     margin: 0;
     padding: 0;
@@ -23,28 +23,15 @@ html {
 
 body {
     font-size: 16px;
-
 }
 
 p {
     font-family: helvetica, arial, sans-serif;
-    line-height: 1.5em;
+    line-height: 1.5;
+    padding: 1em 10px;
 }
 
-.col-4 > p {
-    padding: 10px;
-    margin: 0px;
 
-}
-
-.col-3 > p {
-    margin: 20px 10px;
-}
-.col-6 > p {
-    padding: 20px;
-    margin-top: 0px;
-
-}
 
 .title {
     font-family: helvetica, arial, sans-serif;
@@ -52,6 +39,7 @@ p {
     color: #ffffff;
     padding: 20px 10px 5px 10px;
 }
+/*** START Basic classes for grid composition ***/
 
 .grid {
     max-width: 1200px;
@@ -115,6 +103,22 @@ p {
 
 .col-12 {
     width: 100%;
+}
+/*** END Basic classes for grid composition ***/
+
+.img-holder {
+    padding: 10px;
+}
+
+.centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.widget-textblock {
+    max-height: 200px;
+    overflow: auto;
 }
 
 .screenshot {
