@@ -12,7 +12,23 @@ html {
     -webkit-box-sizing: inherit;
     -moz-box-sizing: inherit;
     box-sizing: inherit;
-    outline: 1px solid red !important;
+    outline: 1px dotted red !important;
+}
+
+
+.col-4 > p {
+    padding: 10px;
+    margin: 0px;
+
+}
+
+.col-3 > p {
+    margin: 20px 10px;
+}
+.col-6 > p {
+    padding: 20px;
+    margin-top: 0px;
+
 }
 
 .title {
