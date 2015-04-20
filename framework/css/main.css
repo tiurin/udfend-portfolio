@@ -15,6 +15,12 @@ html {
     outline: 1px dotted red !important;
 }
 
+/* cssreset.com */
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     font-size: 16px;
 
