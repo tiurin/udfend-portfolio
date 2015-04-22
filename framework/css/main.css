@@ -31,28 +31,44 @@ p {
     padding: 1em 10px;
 }
 
+h1, h4 {
+    padding: 10px;
+}
+
 .title {
     font-family: helvetica, arial, sans-serif;
-    background: #33bebe;
-    color: #ffffff;
-    padding: 20px 10px 5px 10px;
+    color: #000000;
 }
+
+.text-right {
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
 /*** START Basic classes for grid composition ***/
 
 .grid {
-    max-width: 1200px;
+    max-width: 960px;
     width: 100%;
 }
 
 .row {
     width: 100%;
     margin-bottom: 15px;
+    margin-top: 10px;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
+}
+
+.header-row {
+    justify-content: space-between;
 }
 
 .col-1 {
@@ -123,14 +139,4 @@ p {
 .widget-textblock {
     max-height: 200px;
     overflow: auto;
-}
-
-.screenshot {
-    max-width: 460px;
-    min-width: 200px;
-}
-
-.description {
-    max-width: 705px;
-    margin-left: 14px;
 }
