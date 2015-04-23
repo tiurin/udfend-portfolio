@@ -67,7 +67,7 @@ h1, h4 {
     flex-flow: row wrap;
 }
 
-.header-row {
+.space-between {
     justify-content: space-between;
 }
 
