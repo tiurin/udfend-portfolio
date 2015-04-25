@@ -33,10 +33,21 @@ p {
 
 h1 {
     padding: 10px 20px 0px 0px;
+    font-family: 'Vollkorn', serif;
 }
 
 h4 {
     padding: 10px 20px 0px 0px;
+    font-family: 'Source Code Pro', monospace;
+}
+
+h2 {
+    font-family: 'Source Code Pro', monospace;
+}
+
+h3,
+a {
+    font-family: 'Hind', sans-serif;
 }
 
 .logo {
@@ -44,7 +55,6 @@ h4 {
 }
 
 .title {
-    font-family: helvetica, arial, sans-serif;
     color: #000000;
 }
 
@@ -63,7 +73,6 @@ h4 {
     border-top: solid 4px grey;
     border-radius: 10px;
 }
-
 /*** START Basic classes for grid composition ***/
 
 .grid {
