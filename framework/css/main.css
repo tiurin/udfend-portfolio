@@ -50,6 +50,10 @@ a {
     font-family: 'Hind', sans-serif;
 }
 
+a {
+    color: grey;
+}
+
 .logo {
     margin-left: 10px;
 }
