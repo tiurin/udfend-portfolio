@@ -36,11 +36,6 @@ h1 {
     font-family: 'Vollkorn', serif;
 }
 
-h4 {
-    padding: 10px 20px 0px 0px;
-    font-family: 'Source Code Pro', monospace;
-}
-
 h2 {
     font-family: 'Source Code Pro', monospace;
 }
@@ -50,16 +45,31 @@ a {
     font-family: 'Hind', sans-serif;
 }
 
+h4 {
+    padding: 10px 20px 0px 0px;
+    font-family: 'Source Code Pro', monospace;
+}
+
 a {
     color: grey;
+}
+
+footer {
+    padding: 20px;
+}
+
+footer span,
+footer a {
+    font-family: 'Source Code Pro', monospace;
+    font-size: 12px;
 }
 
 .logo {
     margin-left: 10px;
 }
 
-.title {
-    color: #000000;
+.project-title {
+    padding: 10px 0px;
 }
 
 .text-right {
