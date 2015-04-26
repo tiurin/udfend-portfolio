@@ -25,12 +25,6 @@ body {
     font-size: 16px;
 }
 
-p {
-    font-family: helvetica, arial, sans-serif;
-    line-height: 1.5;
-    padding: 1em 10px;
-}
-
 h1 {
     padding: 10px 20px 0px 0px;
     font-family: 'Vollkorn', serif;
@@ -52,10 +46,6 @@ h4 {
 
 a {
     color: grey;
-}
-
-footer {
-    padding: 20px;
 }
 
 footer span,
@@ -81,8 +71,7 @@ footer a {
 }
 
 .featured {
-    padding-bottom: 20px;
-    padding-top: 20px;
+    padding: 20px;
     border-bottom: solid 4px grey;
     border-top: solid 4px grey;
     border-radius: 10px;
