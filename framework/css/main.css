@@ -21,6 +21,21 @@ html {
     padding: 0;
 }
 
+/*responsiveness*/
+
+img,
+embed,
+object,
+video {
+    max-width: 100%;
+}
+
+nav a, button {
+    min-width: 48px;
+    min-height: 48px;
+    padding: 20px;
+}
+
 body {
     font-size: 16px;
 }
@@ -55,7 +70,7 @@ footer a {
 }
 
 .logo {
-    margin-left: 10px;
+    padding-left: 10px;
 }
 
 .project-title {
@@ -79,7 +94,7 @@ footer a {
 /*** START Basic classes for grid composition ***/
 
 .grid {
-    max-width: 960px;
+    max-width: 100%;
     width: 100%;
 }
 
@@ -152,11 +167,11 @@ footer a {
     padding: 10px;
 }
 
-@media only screen and (max-width: 500px) {
+/*@media only screen and (max-width: 500px) {
     .row {
         flex-direction: column;
     }
-}
+}*/
 
 .centered {
     display: block;
