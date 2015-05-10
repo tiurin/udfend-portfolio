@@ -1,185 +1,256 @@
 /* https://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
 
 html {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
-    -webkit-box-sizing: inherit;
-    -moz-box-sizing: inherit;
-    box-sizing: inherit;
-    /*outline: 1px dotted red !important;*/
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  /*outline: 1px dotted red !important;*/
 }
 /* cssreset.com */
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
-
 /*responsiveness*/
 
 img,
 embed,
 object,
 video {
-    max-width: 100%;
+  max-width: 100%;
 }
 
-nav a, button {
-    min-width: 48px;
-    min-height: 48px;
-    padding: 20px;
+nav a,
+button {
+  min-width: 48px;
+  min-height: 48px;
+  padding: 20px;
 }
 
 body {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 h1 {
-    padding: 10px 20px 0px 0px;
-    font-family: 'Vollkorn', serif;
+  font-family: 'Vollkorn', serif;
 }
 
 h2 {
-    font-family: 'Source Code Pro', monospace;
+  font-family: 'Source Code Pro', monospace;
 }
 
 h3,
 a {
-    font-family: 'Hind', sans-serif;
+  font-family: 'Hind', sans-serif;
 }
 
 h4 {
-    padding: 10px 20px 0px 0px;
-    font-family: 'Source Code Pro', monospace;
+  padding: 10px 20px 0px 0px;
+  font-family: 'Source Code Pro', monospace;
 }
 
 a {
-    color: grey;
+  color: grey;
 }
 
 footer span,
 footer a {
-    font-family: 'Source Code Pro', monospace;
-    font-size: 12px;
+  font-family: 'Source Code Pro', monospace;
+  font-size: 12px;
 }
 
 .logo {
-    padding-left: 10px;
+  padding-left: 10px;
 }
 
 .project-title {
-    padding: 10px 0px;
+  padding: 10px 0px;
 }
 
 .text-right {
-    text-align: right;
+  text-align: right;
 }
 
 .text-center {
-    text-align: center;
+  text-align: center;
 }
 
 .featured {
-    padding: 20px;
-    border-bottom: solid 4px grey;
-    border-top: solid 4px grey;
-    border-radius: 10px;
+  padding: 20px;
+  border-bottom: solid 4px grey;
+  border-top: solid 4px grey;
+  border-radius: 10px;
 }
 /*** START Basic classes for grid composition ***/
 
 .grid {
-    max-width: 100%;
-    width: 100%;
+  max-width: 960px;
+  width: 100%;
 }
 
 .row {
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.col-1 {
+  width: 8.33%;
+}
+
+.col-2 {
+  width: 16.66%;
+}
+
+.col-3 {
+  width: 25%;
+}
+
+.col-4 {
+  width: 33.33%;
+}
+
+.col-5 {
+  width: 41.66%;
+}
+
+.col-6 {
+  width: 50%;
+}
+
+.col-7 {
+  width: 58.33%;
+}
+
+.col-8 {
+  width: 66.66%;
+}
+
+.col-9 {
+  width: 75%;
+}
+
+.col-10 {
+  width: 83.33%;
+}
+
+.col-11 {
+  width: 91.66%;
+}
+
+.col-12 {
+  width: 100%;
+}
+/*** END Basic classes for grid composition ***/
+
+.img-holder {
+  padding: 10px;
+}
+
+.centered {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.widget-textblock {
+  max-height: 200px;
+  overflow: auto;
+}
+/* Responsive beakpoints*/
+
+@media screen and (max-width: 500px) {
+  .col-2,
+  .col-3,
+  .col-4,
+  .col-10 {
     width: 100%;
-    margin-bottom: 20px;
-    margin-top: 20px;
+  }
+  .logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .title {
+    text-align: center;
+    padding: 10px 0px 0px 0px;
+  }
+  .project-info {
+    text-align: center;
+  }
+  .project-link {
+    padding: 10px 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+}
+
+@media screen and (min-width: 501px) and (max-width: 800px) {
+  .title {
+    text-align: right;
+    padding: 10px 20px 0px 0px;
+  }
+  .img-holder {
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: flex;
     flex-flow: row wrap;
-}
-
-.space-between {
-    justify-content: space-between;
-}
-
-.col-1 {
-    width: 8.33%;
-}
-
-.col-2 {
-    width: 16.66%;
-}
-
-.col-3 {
-    width: 25%;
-}
-
-.col-4 {
-    width: 33.33%;
-}
-
-.col-5 {
-    width: 41.66%;
-}
-
-.col-6 {
-    width: 50%;
-}
-
-.col-7 {
-    width: 58.33%;
-}
-
-.col-8 {
-    width: 66.66%;
-}
-
-.col-9 {
-    width: 75%;
-}
-
-.col-10 {
-    width: 83.33%;
-}
-
-.col-11 {
-    width: 91.66%;
-}
-
-.col-12 {
     width: 100%;
+  }
+  .project-img {
+    width: 50%;
+  }
+  .project-info {
+    padding: 10px 10px;
+    width: 50%;
+  }
+  .project-title {
+    vertical-align: middle;
+    padding: 10px 10px;
+  }
+  .project-link {
+    padding: 10px 10px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
-/*** END Basic classes for grid composition ***/
 
-.img-holder {
-    padding: 10px;
-}
-
-/*@media only screen and (max-width: 500px) {
-    .row {
-        flex-direction: column;
-    }
-}*/
-
-.centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.widget-textblock {
-    max-height: 200px;
-    overflow: auto;
+@media screen and (min-width: 801px) {
+  .title {
+    text-align: right;
+    padding: 10px 20px 0px 0px;
+  }
+  .project-info {
+    text-align: center;
+  }
+  .project-link {
+    padding: 10px 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
 }
